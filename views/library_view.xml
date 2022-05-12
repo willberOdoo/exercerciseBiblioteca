@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="library_list" model="ir.ui.view">
+            <field name="name">Library</field>
+            <field name="res_model">action.library</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create he first course
+                </p>
+
+                <tree editable="bottom" colors="gray:is_done==True"
+                   fonts="italic: state!='open'"
+                   delete="false">
+                    <field name="name"/>
+                    <field name="user_id"/>
+                  </tree>
+    </field>
+
+        </record>
+    </data>
+</odoo>
